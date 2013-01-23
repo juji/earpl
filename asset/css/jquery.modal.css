@@ -1,0 +1,118 @@
+.ModalBox_BG{
+	background-color:RGBA(0,0,0,0.5);
+	-ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);
+	zoom: 1;
+	position:fixed;
+	z-index:10000px;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+	display:none;
+}
+
+.ModalBox{
+    border:1px solid #bababa;
+    display:inline-block;
+    font-family:arial;
+    border-left:1px solid #dadada;
+    background-color:white;
+    max-width:500px;
+    min-width:200px;
+    position:fixed;
+    z-index:10000px;
+    top:-10000px;
+}
+
+.ModalBox.red{border-top:2px solid #FE2E2E;}
+.ModalBox.blue{border-top:2px solid #2E9AFE;}
+.ModalBox.green{border-top:2px solid #52D017;}
+.ModalBox.grey{border-top:2px solid grey;}
+
+.ModalBox_tri{
+    display:inline-block;
+    width:0;
+    height:0;
+    border-bottom:13px solid #fff;
+    position:absolute;
+    top:0;
+    left:-1px;
+    z-index:0;
+}
+
+.ModalBox.red .ModalBox_tri{border-left:13px solid #FE2E2E;}
+.ModalBox.blue .ModalBox_tri{border-left:13px solid #2E9AFE;}
+.ModalBox.green .ModalBox_tri{border-left:13px solid #52D017;}
+.ModalBox.grey .ModalBox_tri{border-left:13px solid grey;}
+
+.ModalBox_title{
+    font-size:15px;
+    padding:13px 21px;
+    position:relative;
+    z-index:1;
+    line-height:20px;
+    color:#444;
+}
+
+.ModalBox_titletext{font-weight:bold;}
+
+.ModalBox_content{
+    font-size:12px;
+    padding:13px 13px 0 21px;
+    margin-right:13px;
+    margin-bottom:34px;
+    color:#444;
+    max-height:550px;
+    overflow:auto;
+    line-height:18px;
+}
+
+.ModalBox_close{
+    font-size:13px;
+    color:#aaa;
+    text-decoration:none;
+}
+
+.ModalBox_close:hover{
+    color:red;
+}
+
+.ModalBox_buttons{
+	text-align:center;
+	padding:13px 0;
+}
+
+.ModalBox_bttn{
+	display:inline-block;
+	padding:5px 13px;
+	font-size:12px;
+	color:white;
+	background-color:#dadada;
+	text-decoration:none;
+	margin-right:5px;
+	font-weight:bold;
+}
+
+.ModalBox_bttn.red{background-color:#FE2E2E;}
+.ModalBox_bttn.blue{background-color:#2E9AFE;}
+.ModalBox_bttn.green{background-color:#04B404;}
+.ModalBox_bttn.grey{background-color:#666;}
+.ModalBox_bttn:hover{color:white;}
+.ModalBox_bttn.red:hover,.ModalBox_bttn.red.active{
+	background-color:red;
+}
+
+.ModalBox_bttn.blue:hover,.ModalBox_bttn.blue.active{
+	background-color:#1569C7;
+}
+
+.ModalBox_bttn.green:hover,.ModalBox_bttn.green.active{
+	background-color:#52D017;
+}
+
+.ModalBox_bttn.grey:hover,.ModalBox_bttn.grey.active{
+	background-color:grey;
+}
